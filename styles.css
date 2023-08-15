@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://archziner.com/wp-content/uploads/2020/01/creation-of-adam-by-michelangelo-hands-touching-piece-red-aesthetic-wallpaper-blue-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.calculator {
+  height: 290px;
+  width: 250px;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+.calculator:hover {
+  transform: translateY(-3px);
+}
+
+#display {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.button {
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.number {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.operator {
+  background-color: #a28e96;
+  border-radius: 5px;
+  color: black;
+  font-weight: bolder;
+}
+
+.equals {
+  background-color: #a3aece;
+  color: #fff;
+  border-radius: 5px;
+}
+.clear {
+  background-color: #a3aece;
+}
